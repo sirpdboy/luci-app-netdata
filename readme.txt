@@ -18,4 +18,4 @@ LuCI  --->
 		<*> luci-app-netdata.........................LuCI support for Netdata
 
 
-make package/luci-app-netdata/compile V=s
+make package/new/luci-app-netdata/compile V=s

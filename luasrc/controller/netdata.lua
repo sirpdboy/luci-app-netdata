@@ -10,6 +10,6 @@ function index()
 end
 
 function action_netdata()
-	luci.sys.call("/usr/share/netdata/netdatacn 2>&1 >/dev/null")
+	luci.sys.call("/usr/share/netdatacn/netdatacn.sh 2>&1 >/dev/null")
 	luci.http.redirect(luci.dispatcher.build_url("admin","status","netdata"))
 end
