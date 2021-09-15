@@ -24,9 +24,9 @@ netdataDashboard.menu = {
     },
 
     'ap': {
-        title: 'Access Points',
+        title: '接入点',
         icon: '<i class="fas fa-wifi"></i>',
-        info: 'Performance metrics for the access points (i.e. wireless interfaces in AP mode) found on the system.'
+        info: 'Performance metrics for the 接入点 (i.e. wireless interfaces in AP mode) found on the system.'
     },
 
     'tc': {
@@ -1002,19 +1002,19 @@ netdataDashboard.context = {
     },
 
     'mem.kernel': {
-        info: 'The total amount of memory being used by the kernel. <b>Slab</b> is the amount of memory used by the kernel to cache data structures for its own use. <b>KernelStack</b> is the amount of memory allocated for each task done by the kernel. <b>PageTables</b> is the amount of memory decicated to the lowest level of page tables (A page table is used to turn a virtual address into a physical memory address). <b>VmallocUsed</b> is the amount of memory being used as virtual address space.'
+        info: '内核正在使用的内存总量。 <b>Slab</b> is the amount of memory used by the kernel to cache data structures for its own use. <b>KernelStack</b> is the amount of memory allocated for each task done by the kernel. <b>PageTables</b> is the amount of memory decicated to the lowest level of page tables (A page table is used to turn a virtual address into a physical memory address). <b>VmallocUsed</b> is the amount of memory being used as virtual address space.'
     },
 
     'mem.slab': {
-        info: '<b>Reclaimable</b> is the amount of memory which the kernel can reuse. <b>Unreclaimable</b> can not be reused even when the kernel is lacking memory.'
+        info: '<b>可回收</b> is the amount of memory which the kernel can reuse. <b>Un可回收</b> can not be reused even when the kernel is lacking memory.'
     },
 
     'mem.hugepages': {
-        info: 'Dedicated (or Direct) HugePages is memory reserved for applications configured to utilize huge pages. Hugepages are <b>used</b> memory, even if there are free hugepages available.'
+        info: '专用（或直接）HugePages是为配置为使用巨大页面的应用程序保留的内存。即使有可用的Hugepages，Hugepages也会在内存中使用。'
     },
 
     'mem.transparent_hugepages': {
-        info: 'Transparent HugePages (THP) is backing virtual memory with huge pages, supporting automatic promotion and demotion of page sizes. It works for all applications for anonymous memory mappings and tmpfs/shmem.'
+        info: 'Transparent HugePages (THP)是用巨大的页面来支持虚拟内存，支持页面大小的自动晋升和降级。它适用于所有应用的匿名内存映射和tmpfs/shmem'
     },
 
     'mem.cachestat_ratio': {
@@ -1072,7 +1072,7 @@ netdataDashboard.context = {
     // IP
 
     'ip.inerrors': {
-        info: 'Errors encountered during the reception of IP packets. ' +
+        info: '在接收IP数据包期间遇到的错误. ' +
             '<code>noroutes</code> (<code>InNoRoutes</code>) counts packets that were dropped because there was no route to send them. ' +
             '<code>truncated</code> (<code>InTruncatedPkts</code>) counts packets which is being discarded because the datagram frame didn\'t carry enough data. ' +
             '<code>checksum</code> (<code>InCsumErrors</code>) counts packets that were dropped because they had wrong checksum. '
@@ -1098,7 +1098,7 @@ netdataDashboard.context = {
     },
 
     'ip.tcp_accept_queue': {
-        info: 'The <b>accept queue</b> of the kernel holds the fully established TCP connections, waiting to be handled ' +
+        info: 'The <b>accept queue</b> 内核持有完全建立的TCP连接，等待被处理 ' +
             'by the listening application. <b>overflows</b> (or <code>ListenOverflows</code>) is the number of ' +
             'established connections that could not be handled because the receive queue of the listening application ' +
             'was full. <b>drops</b> (or <code>ListenDrops</code>) is the number of incoming ' +
@@ -1111,18 +1111,18 @@ netdataDashboard.context = {
     // IPv4
 
     'ipv4.tcpsock': {
-        info: 'The number of established TCP connections (known as <code>CurrEstab</code>). This is a snapshot of the established connections at the time of measurement (i.e. a connection established and a connection disconnected within the same iteration will not affect this metric).'
+        info: '已建立的TCP连接的数量（称为<code>CurrEstab</code>）。  这是测量时已建立的连接的快照（即在同一迭代中建立的连接和断开的连接将不影响这个指标）。'
     },
 
     'ipv4.tcpopens': {
-        info: '<b>active</b> or <code>ActiveOpens</code> is the number of outgoing TCP <b>connections attempted</b> by this host.'
-            + ' <b>passive</b> or <code>PassiveOpens</code> is the number of incoming TCP <b>connections accepted</b> by this host.'
+        info: '<b>active</b> or <code>主动开放</code> 此主机尝试的传出TCP<b>连接数。'
+            + ' <b>passive</b> or <code>被动打开</code> 是此主机接受的传入 TCP <b>连接</b> 的数量。'
     },
 
     'ipv4.tcperrors': {
-        info: '<code>InErrs</code> is the number of TCP segments received in error (including header too small, checksum errors, sequence errors, bad packets - for both IPv4 and IPv6).'
-            + ' <code>InCsumErrors</code> is the number of TCP segments received with checksum errors (for both IPv4 and IPv6).'
-            + ' <code>RetransSegs</code> is the number of TCP segments retransmitted.'
+        info: '<code>InErrs</code> 是收到错误的TCP段的数量（包括头太小、校验错误、序列错误、坏数据包--对于IPv4和IPv6）。'
+            + ' <code>InCsumErrors</code> 是收到的有校验和错误的TCP段的数量（对于IPv4和IPv6）'
+            + ' <code>RetransSegs</code> 是重新传输的TCP段数。'
     },
 
     'ipv4.tcphandshake': {
@@ -1156,7 +1156,7 @@ netdataDashboard.context = {
     },
 
     'apps.uptime': {
-        info: 'Carried over process group uptime since the Netdata restart. The period of time within which at least one process in the group was running.'
+        info: '自Netdata重启以来结转的进程组运行时间。在该组中至少有一个进程在运行的时间段。'
     },
 
     'apps.file_open': {
@@ -1254,11 +1254,11 @@ netdataDashboard.context = {
     },
 
     'users.mem': {
-        info: 'Real memory (RAM) used per user. This does not include shared memory.'
+        info: '每个用户使用的真实内存（RAM）。这不包括共享内存。'
     },
 
     'users.vmem': {
-        info: 'Virtual memory allocated per user. Please check <a href="https://github.com/netdata/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> for more information.'
+        info: '每个用户分配的虚拟内存。请检查 <a href="https://github.com/netdata/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> for more information.'
     },
 
     'users.preads': {
@@ -1270,7 +1270,7 @@ netdataDashboard.context = {
     },
 
     'users.uptime': {
-        info: 'Carried over process group uptime since the Netdata restart. The period of time within which at least one process in the group was running.'
+        info: '自Netdata重启以来结转的进程组运行时间。在该组中至少有一个进程在运行的时间段。'
     },
 
     // ------------------------------------------------------------------------
@@ -1281,11 +1281,11 @@ netdataDashboard.context = {
     },
 
     'groups.mem': {
-        info: 'Real memory (RAM) used per user group. This does not include shared memory.'
+        info: '每个用户组使用的实际内存（RAM）。这不包括共享内存。'
     },
 
     'groups.vmem': {
-        info: 'Virtual memory allocated per user group since the Netdata restart. Please check <a href="https://github.com/netdata/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> for more information.'
+        info: '自Netdata重新启动以来，每个用户组分配的虚拟内存。请检查 <a href="https://github.com/netdata/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> for more information.'
     },
 
     'groups.preads': {
@@ -1297,7 +1297,7 @@ netdataDashboard.context = {
     },
 
     'groups.uptime': {
-        info: 'Carried over process group uptime. The period of time within which at least one process in the group was running.'
+        info: '结转的进程组正常运行时间。在该组中至少有一个进程在运行的时间段。'
     },
 
     // ------------------------------------------------------------------------
@@ -1390,12 +1390,12 @@ netdataDashboard.context = {
         heads: [
             netdataDashboard.gaugeChart('使用率', '12%', '', '#FF5588')
         ],
-        info: 'Disk Utilization measures the amount of time the disk was busy with something. This is not related to its performance. 100% means that the system always had an outstanding operation on the disk. Keep in mind that depending on the underlying technology of the disk, 100% here may or may not be an indication of congestion.'
+        info: '磁盘利用率度量磁盘忙于处理某些事情的时间。这与它的性能无关。100%表示系统在磁盘上始终有未完成的操作。请记住，根据磁盘的底层技术，这里的100%可能表示拥塞，也可能不表示拥塞'
     },
 
     'disk.busy': {
         colors: '#FF5588',
-        info: 'Disk Busy Time measures the amount of time the disk was busy with something.'
+        info: 'Disk Busy Time（磁盘忙时间）测量磁盘忙着处理某些事情的时间量.'
     },
     
     'disk.backlog': {
@@ -1416,20 +1416,20 @@ netdataDashboard.context = {
     },
 
     'disk.qops': {
-        info: 'I/O operations currently in progress. This metric is a snapshot - it is not an average over the last interval.'
+        info: '目前正在进行的I/O操作。这个指标是一个快照--它不是上一个区间的平均值。'
     },
 
     'disk.iotime': {
         height: 0.5,
-        info: 'The sum of the duration of all completed I/O operations. This number can exceed the interval if the disk is able to execute I/O operations in parallel.'
+        info: '所有完成的I/O操作的持续时间之和。如果磁盘能够并行地执行I/O操作，这个数字可能会超过间隔时间'
     },
     'disk.mops': {
         height: 0.5,
-        info: 'The number of merged disk operations. The system is able to merge adjacent I/O operations, for example two 4KB reads can become one 8KB read before given to disk.'
+        info: '合并的磁盘操作的数量。系统能够合并相邻的I/O操作，例如，两个4KB的读取可以在给磁盘之前变成一个8KB的读取'
     },
     'disk.svctm': {
         height: 0.5,
-        info: 'The average service time for completed I/O operations. This metric is calculated using the total busy time of the disk and the number of completed operations. If the disk is able to execute multiple parallel operations the reporting average service time will be misleading.'
+        info: '完成I/O操作的平均服务时间。这个指标是用磁盘的总繁忙时间和已完成的操作数来计算的。如果磁盘能够执行多个并行操作，那么报告的平均服务时间就会产生误导'
     },
     'disk.avgsz': {
         height: 0.5,
@@ -1444,11 +1444,11 @@ netdataDashboard.context = {
         info: '磁碟空间使用率。系统会自动为 root 使用者做保留，以防止 root 使用者使用过多。'
     },
     'disk.inodes': {
-        info: 'inodes (or index nodes) are filesystem objects (e.g. files and directories). On many types of file system implementations, the maximum number of inodes is fixed at filesystem creation, limiting the maximum number of files the filesystem can hold. It is possible for a device to run out of inodes. When this happens, new files cannot be created on the device, even though there may be free space available.'
+        info: 'inodes（或索引节点）是文件系统对象（如文件和目录）。在许多类型的文件系统实现中，最大的节点数量在文件系统创建时是固定的，限制了文件系统可容纳的最大文件数量。一个设备有可能耗尽节点。当这种情况发生时，即使有可用的空间，也不能在设备上创建新文件。'
     },
 
     'mysql.net': {
-        info: 'The amount of data sent to mysql clients (<strong>out</strong>) and received from mysql clients (<strong>in</strong>).'
+        info: '发送到mysql客户端（<strong>out</strong>）和从mysql客户端（<strong>in</strong>）接收的数据量。'
     },
 
     // ------------------------------------------------------------------------
@@ -1940,12 +1940,12 @@ netdataDashboard.context = {
     // beanstalkd
     // system charts
     'beanstalk.cpu_usage': {
-        info: 'Amount of CPU Time for user and system used by beanstalkd.'
+        info: 'beanstalkd使用的用户和系统的CPU时间量。'
     },
 
     // This is also a per-tube stat
     'beanstalk.jobs_rate': {
-        info: 'The rate of jobs processed by the beanstalkd served.'
+        info: 'beanstalkd服务的工作处理率。'
     },
 
     'beanstalk.connections_rate': {
@@ -2559,32 +2559,32 @@ netdataDashboard.context = {
     },
 
     'couchdb.active_tasks': {
-        info: 'Active tasks running on this CouchDB <b>cluster</b>. Four types of tasks currently exist: indexer (view building), replication, database compaction and view compaction.'
+        info: '在这个CouchDB<b>集群上运行的活动任务</b>。目前有四种类型的任务：索引器（视图构建）、复制、数据库压实和视图压实。'
     },
 
     'couchdb.replicator_jobs': {
-        info: 'Detailed breakdown of any replication jobs in progress on this node. For more information, see the <a href="http://docs.couchdb.org/en/latest/replication/replicator.html">replicator documentation</a>.'
+        info: '该节点上正在进行的任何复制工作的详细分类。欲了解更多信息，请参阅 <a href="http://docs.couchdb.org/en/latest/replication/replicator.html">replicator documentation</a>.'
     },
 
     'couchdb.open_files': {
-        info: 'Count of all files held open by CouchDB. If this value seems pegged at 1024 or 4096, your server process is probably hitting the open file handle limit and <a href="http://docs.couchdb.org/en/latest/maintenance/performance.html#pam-and-ulimit">needs to be increased.</a>'
+        info: 'CouchDB保持开放的所有文件的数量。如果这个值似乎被锁定在1024或4096，你的服务器进程可能遇到了开放文件柄的限制，并且<a href="http://docs.couchdb.org/en/latest/maintenance/performance.html#pam-and-ulimit">需要增加.</a>'
     },
 
     'btrfs.disk': {
-        info: 'Physical disk usage of BTRFS. The disk space reported here is the raw physical disk space assigned to the BTRFS volume (i.e. <b>before any RAID levels</b>). BTRFS uses a two-stage allocator, first allocating large regions of disk space for one type of block (data, metadata, or system), and then using a regular block allocator inside those regions. <code>unallocated</code> is the physical disk space that is not allocated yet and is available to become data, metdata or system on demand. When <code>unallocated</code> is zero, all available disk space has been allocated to a specific function. Healthy volumes should ideally have at least five percent of their total space <code>unallocated</code>. You can keep your volume healthy by running the <code>btrfs balance</code> command on it regularly (check <code>man btrfs-balance</code> for more info).  Note that some of the space listed as <code>unallocated</code> may not actually be usable if the volume uses devices of different sizes.',
+        info: 'BTRFS的物理磁盘用量。这里报告的磁盘空间是分配给BTRFS卷的原始物理磁盘空间（即<b>在任何RAID级别之前</b>）。BTRFS使用一个两阶段的分配器，首先为一种类型的块（数据、元数据或系统）分配大的磁盘空间区域，然后在这些区域内使用一个常规的块分配器。<code>unallocated</code>是尚未分配的物理磁盘空间，它可以根据需求成为数据、元数据或系统。当<code>unallocated</code>为零时，所有可用的磁盘空间已经被分配给一个特定的功能。健康的卷最好至少有其总空间的百分之五<code>unallocated</code>。你可以通过定期在卷上运行<code>btrfs balance</code>命令来保持卷的健康（查看<code>man btrfs-balance</code>获取更多信息）。 注意，如果卷使用不同大小的设备，一些被列为<code>未分配</code>的空间可能实际上是不可用的。',
         colors: [NETDATA.colors[12]]
     },
 
     'btrfs.data': {
-        info: 'Logical disk usage for BTRFS data. Data chunks are used to store the actual file data (file contents). The disk space reported here is the usable allocation (i.e. after any striping or replication). Healthy volumes should ideally have no more than a few GB of free space reported here persistently. Running <code>btrfs balance</code> can help here.'
+        info: 'BTRFS数据的逻辑磁盘使用。数据块是用来存储实际的文件数据（文件内容）。这里报告的磁盘空间是可用的分配（即，在任何条带化或复制之后）。健康的卷最好有不超过几GB的空闲空间在这里持续报告。运行<code>btrfs balance</code>可以帮助解决这个问题。'
     },
 
     'btrfs.metadata': {
-        info: 'Logical disk usage for BTRFS metadata. Metadata chunks store most of the filesystem interal structures, as well as information like directory structure and file names. The disk space reported here is the usable allocation (i.e. after any striping or replication). Healthy volumes should ideally have no more than a few GB of free space reported here persistently. Running <code>btrfs balance</code> can help here.'
+        info: 'BTRFS元数据的逻辑磁盘用量。元数据块存储了大部分文件系统的内部结构，以及目录结构和文件名等信息。这里报告的磁盘空间是可用的分配（即在任何条带化或复制之后）。健康的卷在理想情况下应该有不超过几GB的可用空间在这里持续报告。运行<code>btrfs balance</code>可以帮助解决这个问题。'
     },
 
     'btrfs.system': {
-        info: 'Logical disk usage for BTRFS system. System chunks store information about the allocation of other chunks. The disk space reported here is the usable allocation (i.e. after any striping or replication). The values reported here should be relatively small compared to Data and Metadata, and will scale with the volume size and overall space usage.'
+        info: 'BTRFS系统的逻辑磁盘用量。系统块存储了关于其他块的分配信息。这里报告的磁盘空间是可用的分配（即在任何条带化或复制之后）。与数据和元数据相比，这里报告的数值应该是比较小的，并且会随着卷的大小和整体空间的使用而增加。.'
     },
 
     // ------------------------------------------------------------------------
@@ -2818,35 +2818,35 @@ netdataDashboard.context = {
     },
 
     'proxysql.pool_latency': {
-        info: 'The currently ping time in microseconds, as reported from Monitor.'
+        info: '当前的ping时间，以微秒为单位，由Monitor报告。'
     },
 
     'proxysql.queries': {
-        info: 'The number of queries routed towards this particular backend server.'
+        info: '向该特定后端服务器发出的查询次数'
     },
 
     'proxysql.pool_used_connections': {
-        info: 'The number of connections are currently used by ProxySQL for sending queries to the backend server.'
+        info: 'ProxySQL 当前用于向后端服务器发送查询的连接数。'
     },
 
     'proxysql.pool_free_connections': {
-        info: 'The number of connections are currently free. They are kept open in order to minimize the time cost of sending a query to the backend server.'
+        info: '连接数目前是免费的。它们保持打开状态以最大限度地减少向后端服务器发送查询的时间成本'
     },
 
     'proxysql.pool_ok_connections': {
-        info: 'The number of connections were established successfully.'
+        info: '连接数为 成功建立.'
     },
 
     'proxysql.pool_error_connections': {
-        info: 'The number of connections weren\'t established successfully.'
+        info: '连接数为\'t 成功建立.'
     },
 
     'proxysql.commands_count': {
-        info: 'The total number of commands of that type executed'
+        info: '已执行的该类型命令的总数'
     },
 
     'proxysql.commands_duration': {
-        info: 'The total time spent executing commands of that type, in ms'
+        info: '执行该类型命令所花费的总时间，以毫秒为单位'
     },
 
     // ------------------------------------------------------------------------

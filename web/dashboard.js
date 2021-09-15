@@ -1401,7 +1401,7 @@ NETDATA.options = {
     server_timezone: 'unknown',     // timezone reported by the server
 
     force_data_points: 0,           // force the number of points to be returned for charts
-    fake_chart_rendering: false,    // when set to true, the dashboard will download data but will not render the charts
+    fake_chart_rendering: false,    // 当设置为 true, the dashboard will download data but will not render the charts
 
     passive_events: null,           // true if the browser supports passive events
 

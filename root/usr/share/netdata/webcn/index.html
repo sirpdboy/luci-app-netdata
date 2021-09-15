@@ -410,31 +410,31 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="welcomeModalLabel">Welcome to the world of netdata</h4>
+                    <h4 class="modal-title" id="welcomeModalLabel">欢迎来到netdata的世界</h4>
                 </div>
                 <div class="modal-body">
                     <div class="p">
                         <div style="width: 100%; text-align: center; padding-top: 10px; padding-bottom: 10px; font-size: 18px;">
-                            if there is a metric for something, we want it visualised<br/>
-                            and we want this visualisation to be <strong>real-time</strong>, <strong>efficient</strong> and <strong>awesome</strong>
+                            如果有一个衡量标准，我们希望它被可视化。<br/>
+                            而我们希望这个可视化是 <strong>real-time</strong>, <strong>efficient</strong> and <strong>awesome</strong>
                         </div>
                     </div>
                     <div class="p">
                         <b><a href="https://github.com/netdata/netdata/wiki" target="_blank">netdata</a></b>
-                        is a new way to monitor your systems and applications, to get <strong>real-time insights</strong>
-                        of what is really happening and what affects performance.
-                        It is carefully optimised to be a real-time system, without interfering in any way,
-                        to the core function of your systems.
+                        是一种监视您的系统和应用程序的新方法 <strong>real-time insights</strong>
+                        实际发生的情况以及影响性能的因素。
+                        它经过精心优化，成为一个实时系统，没有任何干扰，
+                        您的系统的核心功能。
                     </div>
                     <div class="p">
                         <b><a href="https://github.com/netdata/netdata/wiki" target="_blank">netdata</a></b>
-                        has been designed to monitor <strong>massive amounts of metrics, per server, per second</strong>.
-                        When installed, it might come up with 1k to 3k metrics, but we have been testing it with 100k
-                        metrics, all collected per second, and still the cpu utilisation remained negligible.
+                        已被设计用于监测 <strong>每台服务器每秒都有大量的指标</strong>.
+                        安装后，它可能会有1k到3k的指标，但我们已经用100k测试了它
+                        这些指标都是每秒收集的，但cpu利用率仍然可以忽略不计
                         <br/>
-                        We have also tried to give each metric, a meaning, a context.
-                        We have grouped and categorized all metrics into meaningful charts, providing a
-                        better understanding of the underlying technologies and mechanisms.
+                        我们还试图给每一个指标，一个意义，一个上下文。
+                        我们已将所有指标分组并分类到有意义的图表中，提供了一个                       
+                        更好地理解底层技术和机制
                     </div>
                     <div class="p">
                         <b><a href="https://github.com/netdata/netdata/wiki" target="_blank">netdata</a></b> is free,
@@ -442,7 +442,7 @@
                         <strong><a href="https://github.com/netdata/netdata/tree/master/docs/a-github-star-is-important.md" target="_blank">it is important to give netdata a star at GitHub</a></strong>.
                     </div>
                     <div class="p">
-                        Enjoy real-time performance monitoring!
+                        享受实时性能监控
                     </div>
                     <div class="p">
                         Costa Tsaousis
@@ -477,86 +477,86 @@
                         <div role="tabpanel" class="tab-pane active" id="help_mouse">
                             <div class="p">
                                 <h4>滑鼠移至 / 暂留</h4>
-                                Mouse over on a chart to show, at its legend, the values for the timestamp under the mouse (the chart will also highlight the point at the chart).
+                                将鼠标移到图表上，在图表的图例处显示鼠标下的时间戳值（图表还将突出显示图表上的点）.
                                 <br/>
-                                All the other visible charts will also show and highlight their values for the same timestamp.
+                                所有其他可见图表也将显示并突出显示相同时间戳的值.
                             </div>
                             <hr/>
                             <div class="p">
                                 <h4>拖曳图表内容</h4>
-                                Drag the contents of a chart, by pressing the left mouse button and moving the mouse, to pan it horizontally.
+                                通过按下鼠标左键并移动鼠标来拖动图表的内容，以水平平移图表.
                                 <br/>
-                                All the charts will follow soon after you let the chart alone (this little delay is by design: it speeds up your browser and lets you focus on what you are exploring).
+                                所有的图表都会在你把图表放在一边后很快出现（这个小小的延迟是出于设计：它加速了你的浏览器，让你专注于你正在探索的东西）.
                                 <br/>
-                                Once a chart is panned, auto refreshing stops for all charts. To enable it again, <b>double click</b> a panned chart.
+                                平移图表后，所有图表的自动刷新将停止。为了再次启用它， <b>double click</b> a panned chart.
                             </div>
                             <hr/>
                             <div class="p">
                                 <h4>连点两下</h4>
-                                Double Click a chart to reset all the charts to their default auto-refreshing state.
+                                双击图表可将所有图表重置为默认的自动刷新状态。
                             </div>
                             <hr/>
                             <div class="p">
                                 <h4>SHIFT + 拖曳</h4>
-                                While pressing the <code>SHIFT</code> key, press the left mouse button on the contents of a chart and move the mouse to select an area, to zoom in. The other charts will follow too. Zooming is performed in two phases:
+                                在按下 <code>SHIFT</code> 键，在图表内容上按鼠标左键，然后移动鼠标以选择区域，以放大。其他图表也将紧随其后。缩放分两个阶段执行:
                                 <ul>
-                                    <li>The already loaded chart contents are zoomed (low resolution)</li>
-                                    <li>New data are transferred from the netdata server, to refresh the chart with possibly more detail.</li>
+                                    <li>已加载的图表内容被缩放（低分辨率）</li>
+                                    <li>从netdata服务器传输新数据，以刷新可能包含更多细节的图表.</li>
                                 </ul>
-                                Once a chart is zoomed, auto refreshing stops for all charts. To enable it again, <b>double click</b> a zoomed chart.
+                                图表缩放后，所有图表的自动刷新将停止。再次启用它, <b>double click</b> a zoomed chart.
                             </div>
                             <hr/>
                             <div class="p">
                                 <h4>反白时间轴</h4>
-                                While pressing the <code>ALT</code> key, press the left mouse button on the contents of a chart and move the mouse to select an area. The selected are will be highlighted on all charts.
+                                在按下 <code>ALT</code> 键，在图表内容上按鼠标左键，然后移动鼠标以选择区域。所有图表上都将突出显示所选内容。
                             </div>
                             <hr/>
                             <div class="p">
                                 <h4>SHIFT + 滑鼠滚轮</h4>
-                                While pressing the <code>SHIFT</code> key and the mouse pointer is over the contents of a chart, scroll the mouse wheel to zoom in or out. This kind of zooming is aligned to center below the mouse pointer. The other charts will follow too.
+                                在按下 <code>SHIFT</code> 键，鼠标指针位于图表内容上方，滚动鼠标滚轮以放大或缩小。这种缩放与鼠标指针下方的中心对齐。其他图表也将紧随其后。
                                 <br/>
-                                Once a chart is zoomed, auto refreshing stops for all charts. To enable it again, <b>double click</b> a zoomed chart.
+                                图表缩放后，所有图表的自动刷新将停止。再次启用它, <b>double click</b> a zoomed chart.
                             </div>
                             <hr/>
                             <div class="p">
-                                <h4>Legend Operations</h4>
-                                Click on the label or value of a dimension, will select / un-select this dimension.
+                                <h4>图例操作</h4>
+                                单击标注的标签或值，将选择/取消选择该标注。
                                 <br/>
-                                You can press any of the SHIFT or CONTROL keys and then click on legend labels or values, to select / un-select multiple dimensions.
+                                可以按任意SHIFT键或CONTROL键，然后单击图例标签或值，以选择/取消选择多个标注。
                             </div>
                         </div>
                         <div role="tabpanel" class="tab-pane" id="help_touch">
                             <div class="p">
                                 <h4>Single Tap</h4>
-                                Single Tap on the contents of a chart to show, at its legend, the values for the timestamp tapped (the chart will also highlight the point at the chart).
+                                点击图表内容，在其图例处显示所点击时间戳的值（图表还将突出显示图表上的点）.
                                 <br/>
-                                All the other visible charts will also show and highlight their values for the same timestamp.
+                                所有其他可见图表也将显示并突出显示相同时间戳的值.
                             </div>
                             <hr/>
                             <div class="p">
                                 <h4>Drag Chart Contents</h4>
-                                Touch and Drag the contents of a chart to pan it horizontally.
+                                触摸并拖动图表内容以水平平移
                                 <br/>
-                                All the charts will follow soon after you let the chart alone (this little delay is by design: it speeds up your browser and lets you focus on what you are exploring).
+                                所有的图表都会在你把图表放在一边后很快出现（这个小小的延迟是出于设计：它加速了你的浏览器，让你专注于你正在探索的东西）.
                                 <br/>
-                                Once a chart is panned, auto refreshing stops for all charts. To enable it again, <b>double tap</b> a panned chart.
+                                平移图表后，所有图表的自动刷新将停止。为了再次启用它， <b>double tap</b> a panned chart.
                             </div>
                             <hr/>
                             <div class="p">
                                 <h4>Double Tap</h4>
-                                Double tap a chart to reset all the charts to their default auto-refreshing state.
+                                双击图表可将所有图表重置为默认的自动刷新状态
                             </div>
                             <hr/>
                             <div class="p">
                                 <h4>Zoom <small>(does not work on firefox and IE/Edge)</small></h4>
-                                With two fingers, zoom in or out.
+                                用两根手指放大或缩小。
                                 <br/>
-                                Once a chart is zoomed, auto refreshing stops for all charts. To enable it again, <b>double click</b> a zoomed chart.
+                                图表缩放后，所有图表的自动刷新将停止。再次启用它, <b>double click</b> a zoomed chart.
                             </div>
                             <hr/>
                             <div class="p">
-                                <h4>Legend Operations</h4>
-                                Tap on the label or value of a dimension, will select / un-select this dimension.
+                                <h4>图例操作</h4>
+                                轻触标注的标签或值，将选择/取消选择该标注。
                             </div>
                         </div>
                     </div>
@@ -638,7 +638,7 @@
                                     <tr class="option-row">
                                         <td class="option-control"><input id="stop_updates_when_focus_is_lost" type="checkbox" checked data-toggle="toggle" data-offstyle="danger" data-onstyle="success" data-on="在焦点上" data-off="总是" data-width="110px"></td>
                                         <td class="option-info"><strong>何时要重新整理图表？</strong><br/>
-                                            <small>When set to <b>在焦点上</b>, the charts will stop being updated if the page / tab does not have the focus of the user. When set to <b>总是</b>, the charts will always be refreshed. Set it to <b>在焦点上</b> it to lower the CPU requirements of the browser (and extend the battery of laptops and tablets) when this page does not have your focus. Set to <b>总是</b> to work on another window (i.e. change the settings of something) and have the charts auto-refresh in this window.</small>
+                                            <small>当设置为 <b>在焦点上</b>, 如果页面/选项卡没有用户的焦点，图表将停止更新。当设置为 <b>总是</b>, 图表将始终刷新。设定为 <b>在焦点上</b> 当您不关注此页面时，可以降低浏览器的CPU要求（并扩展笔记本电脑和平板电脑的电池）。设置为<b>总是</b> 在另一个窗口上工作（即更改某些设置）并在此窗口中自动刷新图表。</small>
                                         </td>
                                         </tr>
                                     <tr class="option-row">
@@ -646,19 +646,19 @@
                                         <input id="eliminate_zero_dimensions" type="checkbox" checked data-toggle="toggle" data-on="非零" data-off="所有" data-width="110px">
                                         </td>
                                         <td class="option-info"><strong>要显示那些图表维度？</strong><br/>
-                                            <small>When set to <b>非零</b>, dimensions that have all their values (within the current view) set to zero will not be transferred from the netdata server (except if all dimensions of the chart are zero, in which case this setting does nothing - all dimensions are transferred and shown). When set to <b>All</b>, all dimensions will always be shown. Set it to <b>非零</b> to lower the data transferred between netdata and your browser, lower the CPU requirements of your browser (fewer lines to draw) and increase the focus on the legends (fewer entries at the legends).</small>
+                                            <small>当设置为 <b>非零</b>, 将所有值（在当前视图中）设置为零的维度将不会从netdata服务器传输（除非图表的所有维度都为零，在这种情况下，此设置不起任何作用-所有维度都将传输并显示）。当设置为 <b> 所有</b>，所有尺寸将始终显示。将其设置为<b>非零</b> 要降低netdata和浏览器之间传输的数据，请降低浏览器的CPU要求（要绘制的线更少），并增加图例的焦点（图例处的条目更少）</small>
                                         </td>
                                         </tr>
                                     <tr class="option-row">
                                         <td class="option-control"><input id="destroy_on_hide" type="checkbox" data-toggle="toggle" data-on="消去" data-off="隐藏" data-width="110px"></td>
                                         <td class="option-info"><strong>如何处理隐藏图表？</strong><br/>
-                                            <small>When set to <b>消去</b>, charts that are not in the current viewport of the browser (are above, or below the visible area of the page), will be destroyed and re-created if and when they become visible again. When set to <b>Hide</b>, the not-visible charts will be just hidden, to simplify the DOM and speed up your browser. Set it to <b>消去</b>, to lower the memory requirements of your browser. Set it to <b>隐藏</b> for faster restoration of charts on page scrolling.</small>
+                                            <small>当设置为 <b>消去</b>, 不在浏览器当前视口中的图表（位于页面可见区域的上方或下方）将在再次可见时销毁并重新创建。当设置为 <b> 隐藏，不可见的图表将被隐藏，以简化DOM并加快浏览器速度。将其设置为<b>消去</b> ，以降低浏览器的内存要求。将其设置为<b>隐藏</b> 用于在页面滚动时更快地恢复图表。</small>
                                         </td>
                                         </tr>
                                     <tr class="option-row">
                                         <td class="option-control"><input id="async_on_scroll" type="checkbox" data-toggle="toggle" data-on="非同步" data-off="同步" data-width="110px"></td>
                                         <td class="option-info"><strong>如何处理页面卷动？</strong><br/>
-                                            <small>When set to <b>同步</b>, charts will be examined for their visibility immediately after scrolling. On slow computers this may impact the smoothness of page scrolling. To update the page when scrolling ends, set it to <b>Async</b>. Set it to <b>Sync</b> for immediate chart updates when scrolling. Set it to <b>非同步</b> for smoother page scrolling on slower computers.</small>
+                                            <small>当设置为 <b>同步</b>, 滚动后，将立即检查图表的可见性。在速度较慢的计算机上，这可能会影响页面滚动的平滑度。要在滚动结束时更新页面，请将其设置为异步。将其设置为“同步”，以便在滚动时立即更新图表。将其设置为<b>非同步</b> 在速度较慢的计算机上进行更平滑的页面滚动</small>
                                         </td>
                                         </tr>
                                     </table>
@@ -672,25 +672,25 @@
                                     <tr class="option-row">
                                         <td class="option-control"><input id="parallel_refresher" type="checkbox" checked data-toggle="toggle" data-on="并行" data-off="循序" data-width="110px"></td>
                                         <td class="option-info"><strong>采用何种图表更新模式？</strong><br/>
-                                            <small>When set to <b>并行</b>, visible charts are refreshed in parallel (all queries are sent to netdata server in parallel) and are rendered asynchronously. When set to <b>sequential</b> charts are refreshed one after another. Set it to parallel if your browser can cope with it (most modern browsers do), set it to sequential if you work on an older/slower computer.</small>
+                                            <small>当设置为 <b>并行</b>, 可见图表并行刷新（所有查询并行发送到netdata server）并异步呈现。当设置为 <b> 顺序</b>图表会一个接一个地刷新。如果您的浏览器可以处理它，请将其设置为并行（大多数现代浏览器都可以），如果您在较旧/较慢的计算机上工作，请将其设置为顺序。</small>
                                         </td>
                                     </tr>
                                     <tr class="option-row" id="concurrent_refreshes_row">
                                         <td class="option-control"><input id="concurrent_refreshes" type="checkbox" checked data-toggle="toggle" data-on="重新同步" data-off="尽力而为" data-width="110px"></td>
                                         <td class="option-info"><strong>重新整理时是否需要同步所有图表？</strong><br/>
-                                            <small>When set to <b>重新同步</b>, the dashboard will attempt to re-synchronize all the charts so that they are refreshed concurrently. When set to <b>尽力而为</b>, each chart may be refreshed with a little time difference to the others. Normally, the dashboard starts refreshing them in parallel, but depending on the speed of your computer and the network latencies, charts start having a slight time difference. Setting this to <b>重新同步</b> will attempt to re-synchronize the charts on every update. Setting it to <b>尽力而为</b> may lower the pressure on your browser and the network.</small>
+                                            <small>当设置为 <b>重新同步</b>, 仪表板将尝试重新同步所有图表，以便它们同时刷新。当设置为 <b>尽力而为</b> ，每个图表可能会刷新，但与其他图表有一点时差。通常情况下，仪表板会同时开始刷新它们，但根据计算机的速度和网络延迟，图表开始有轻微的时差。将此设置为<b>重新同步</b> 将在每次更新时尝试重新同步图表。将其设置为<b>尽力而为</b> 可能会降低浏览器和网络的压力</small>
                                         </td>
                                     </tr>
                                     <tr class="option-row">
                                         <td class="option-control"><input id="sync_selection" type="checkbox" checked data-toggle="toggle" data-on="同步" data-off="不要同步" data-onstyle="success" data-offstyle="danger" data-width="110px"></td>
                                         <td class="option-info"><strong>是否悬停在图表上时同步更新所有图表？</strong><br/>
-                                            <small>When enabled, a selection on one chart will automatically select the same time on all other visible charts and the legends of all visible charts will be updated to show the selected values. When disabled, only the chart getting the user's attention will be selected. Enable it to get better insights of the data. Disable it if you are on a very slow computer that cannot actually do it.</small>
+                                            <small>启用时，一个图表上的选择将自动同时在所有其他可见图表上选择，并且所有可见图表的图例将更新以显示所选值。禁用时，将仅选择引起用户注意的图表。使it部门能够更好地了解数据。禁用它，如果你是在一个非常缓慢的计算机上，实际上无法做到这一点.</small>
                                         </td>
                                         </tr>
                                     <tr class="option-row">
                                         <td class="option-control"><input id="sync_pan_and_zoom" type="checkbox" checked data-toggle="toggle"  data-on="同步" data-off="不要同步" data-onstyle="success" data-offstyle="danger" data-width="110px"></td>
                                         <td class="option-info"><strong>是否同步移动与缩放所有图表？</strong><br/>
-                                            <small>When enabled, pan and zoom operations on a chart will be replicated to all charts (even the ones that are not currently visible - of course only when they will become visible). When disabled, pan and zoom operations will not be propagated to other charts.</small>
+                                            <small>启用后，图表上的平移和缩放操作将复制到所有图表（即使是当前不可见的图表，当然只有当它们变为可见时）。禁用时，平移和缩放操作将不会传播到其他图表.</small>
                                         </td>
                                         </tr>
                                     </table>
@@ -704,33 +704,33 @@
                                     <tr class="option-row">
                                         <td class="option-control"><input id="netdata_theme_control" type="checkbox" checked data-toggle="toggle" data-offstyle="danger" data-onstyle="success" data-on="深色" data-off="白色" data-width="110px"></td>
                                         <td class="option-info"><strong>使用那一种布景主题？</strong><br/>
-                                            <small>Netdata comes with two themes: <b>深色</b> (the default) and <b>浅色</b>.
+                                            <small>Netdata有两个主题： <b>深色</b> (the default) and <b>浅色</b>.
                                             <br/>
-                                            <b>Switching this will reload the dashboard</b>.
+                                            <b>切换此选项将重新加载仪表板</b>.
                                             </small>
                                         </td>
                                         </tr>
                                     <tr class="option-row">
                                         <td class="option-control"><input id="show_help" type="checkbox" checked data-toggle="toggle" data-on="需要说明" data-off="不需说明" data-width="110px"></td>
                                         <td class="option-info"><strong>您需要说明吗？</strong><br/>
-                                            <small>Netdata can show some help in some areas to help you use the dashboard. If all these balloons bother you, disable them using this switch.
+                                            <small>Netdata可以在某些方面显示一些帮助，以帮助您使用仪表板。如果所有这些气球都困扰您，请使用此开关禁用它们。
                                             <br/>
-                                            <b>Switching this will reload the dashboard</b>.
+                                            <b>切换此选项将重新加载仪表板</b>.
                                             </small>
                                         </td>
                                         </tr>
                                     <tr class="option-row">
                                         <td class="option-control"><input id="pan_and_zoom_data_padding" type="checkbox" checked data-toggle="toggle"  data-on="填补" data-off="不需填补" data-width="110px"></td>
                                         <td class="option-info"><strong>是否启用在移动与缩放时同时填补数据？</strong><br/>
-                                            <small>When set to <b>Pad</b> the charts will be padded with more data, both before and after the visible area, thus giving the impression the whole database is loaded. This padding will happen only after the first pan or zoom operation on the chart (initially all charts have only the visible data). When set to <b>不需填补</b> only the visible data will be transfered from the netdata server, even after the first pan and zoom operation.</small>
+                                            <small>当设置为 <b>Pad</b> 图表将在可见区域之前和之后填充更多数据，从而给人以整个数据库已加载的印象。此填充仅在对图表进行第一次平移或缩放操作后发生（最初，所有图表都只有可见数据. 当设置为 <b>不需填补</b> 即使在第一次平移和缩放操作之后，也只会从netdata服务器传输可见数据。</small>
                                         </td>
                                         </tr>
                                     <tr class="option-row">
                                         <td class="option-control"><input id="smooth_plot" type="checkbox" checked data-toggle="toggle"  data-on="平滑" data-off="粗糙" data-width="110px"></td>
                                         <td class="option-info"><strong>是否在图表上启用贝兹曲线？</strong><br/>
-                                            <small>When set to <b>平滑</b> the charts libraries that support it, will plot smooth curves instead of simple straight lines to connect the points.
+                                            <small>当设置为 <b>平滑</b> 支持它的图表库将绘制平滑曲线，而不是简单的直线来连接点
                                             <br/>
-                                            Keep in mind <a href="http://dygraphs.com" target="_blank">dygraphs</a>, the main charting library in netdata dashboards, can only smooth line charts. It cannot smooth area or stacked charts. When set to <b>Rough</b>, this setting can lower the CPU resources consumed by your browser.</small>
+                                            Keep in mind <a href="http://dygraphs.com" target="_blank">dygraphs</a>, netdata仪表板中的主图表库只能平滑折线图。它无法平滑面积或堆叠图表。 当设置为 <b>Rough</b>, 此设置可以降低浏览器消耗的CPU资源。</small>
                                         </td>
                                         </tr>
                                     </table>
@@ -744,17 +744,17 @@
                                         <tr class="option-row">
                                             <td colspan="2" align="center">
                                                 <small>
-                                                    <b>These settings are applied gradually, as charts are updated. To force them, refresh the dashboard now</b>.
+                                                    <b>随着图表的更新，这些设置将逐渐应用。要强制执行，请立即刷新仪表板</b>.
                                                 </small>
                                             </td>
                                         </tr>
                                         <tr class="option-row">
                                             <td class="option-control"><input id="units_conversion" type="checkbox" checked data-toggle="toggle"  data-on="缩放单位" data-off="固定单位" data-onstyle="success" data-width="110px"></td>
                                             <td class="option-info"><strong>是否启用自动缩放单位选择？</strong><br/>
-                                                <small>When set to <b>缩放单位</b> the values shown will dynamically be scaled (e.g. 1000 kilobits will be shown as 1 megabit).
+                                                <small>当设置为 <b>缩放单位</b> the values shown will dynamically be scaled (e.g. 1000 kilobits will be shown as 1 megabit).
                                                     Netdata can auto-scale these original units: <code>kilobits/s</code>, <code>kilobytes/s</code>, <code>KB/s</code>,
                                                     <code>KB</code>, <code>MB</code>, and <code>GB</code>.
-                                                    When set to <b>固定单位</b> all the values will be rendered using the original units maintained by the netdata server.
+                                                    当设置为 <b>固定单位</b> all the values will be rendered using the original units maintained by the netdata server.
                                                 </small>
                                             </td>
                                         </tr>
@@ -768,22 +768,22 @@
                                         <tr id="settingsLocaleTimeRow" class="option-row">
                                             <td class="option-control"><input id="seconds_as_time" type="checkbox" checked data-toggle="toggle"  data-on="时间" data-off="秒" data-onstyle="success" data-width="110px"></td>
                                             <td class="option-info"><strong>是否将秒转换为时间？</strong><br/>
-                                                <small>When set to <b>时间</b>, charts that present <code>秒</code> will show <code>DDd:HH:MM:SS</code>.
-                                                    When set to <b>秒</b>, the raw number of seconds will be presented.
+                                                <small>当设置为 <b>时间</b>, 当前的图表 <code>秒</code> will show <code>DDd:HH:MM:SS</code>.
+                                                    当设置为 <b>秒</b>, 将显示原始秒数.
                                                 </small>
                                             </td>
                                         </tr>
                                         <tr class="option-row">
                                             <td class="option-control"><input id="local_timezone" type="checkbox" checked data-toggle="toggle"  data-on="本地时间" data-off="伺服器时间 data-onstyle="success" data-offstyle="danger" data-width="110px"></td>
                                             <td class="option-info"><strong>是否显示浏览者本地时间或是伺服器时间？</strong><br/>
-                                                <small>When set to <b>本地时间</b>, the charts will use your browser local time. When set to <b>Server Time</b> the charts will use the server time.
+                                                <small>当设置为 <b>本地时间</b>, 图表将使用你的浏览器本地时间。 当设置为 <b>Server Time</b> the charts will use the server time.
                                                     <br/>
-                                                    Set it to <b>本地时间</b> to have a common time-reference, no matter where the server is and which time zone it uses (all your dashboards will report your local time).
-                                                    Set it to <b>伺服器时间</b> when you need to compare netdata charts with server log files.
+                                                    Set it to <b>本地时间</b> 要有一个通用的时间参考，无论服务器在哪里，使用哪个时区（所有仪表板都将报告您的本地时间）.
+                                                    Set it to <b>伺服器时间</b> 当您需要将netdata图表与服务器日志文件进行比较时.
                                                     <br/>
-                                                    Your browser time zone is: <b><span id="browser_timezone">-</span></b>.<br/>
-                                                    The server reported timezone is: <b><span id="server_timezone">-</span></b> (you can set this in netdata.conf <code>[global].timezone</code>).<br/>
-                                                    The current time zone on the dashboard is: <b><span id="current_timezone">-</span></b>.
+                                                    您的浏览器时区为: <b><span id="browser_timezone">-</span></b>.<br/>
+                                                    服务器报告的时区为: <b><span id="server_timezone">-</span></b> (您可以在netdata.conf中进行设置 <code>[global].timezone</code>).<br/>
+                                                    仪表板上的当前时区为: <b><span id="current_timezone">-</span></b>.
                                                     <br/>
                                                     <div class="dropup">
                                                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownTimeZone" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -1204,11 +1204,12 @@
                         GUIDs.
                     </p>
                     <p>
-                        After you upgrade all your netdata servers, your private 
-                        registry will not be needed any more.
+                        升级所有netdata服务器后，您的专用
+
+不再需要注册。
                     </p>
                     <p>
-                        Are you sure you want to proceed?
+                        您确定要继续吗？
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -1228,11 +1229,11 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        You are about to synchronize your netdata.cloud account with data from the registry at <strong><span id="sync-registry-modal-registry"></span></strong>.
-                        This may include server hostnames, urls and identification GUIDs.
+                        您将要将netdata.cloud帐户与位于的注册表中的数据同步 <strong><span id="sync-registry-modal-registry"></span></strong>.
+                        这可能包括服务器主机名、URL和标识GUID.
                     </p>
                     <p>
-                        Are you sure you want to proceed?
+                        您确定要继续吗？
                     </p>
                 </div>
                 <div class="modal-footer">
@@ -1251,16 +1252,16 @@
                     <h4 class="modal-title" id="deleteRegistryModalLabel">Delete <span id="deleteRegistryServerName"></span>?</h4>
                 </div>
                 <div class="modal-body">
-                    You are about to delete, from your personal list of netdata servers, the following server:
+                    您将要从netdata服务器的个人列表中删除以下服务器:
                     <p style="text-align: center; padding-top: 10px; padding-bottom: 10px; line-height: 2;">
                     <b><span id="deleteRegistryServerName2"></span></b>
                     <br/>
                     <b><span id="deleteRegistryServerURL"></span></b>
                     </p>
-                    Are you sure you want to do this?
+                    你确定要这样做吗?
                     <br/>
                     <div style="padding: 10px;"></div>
-                    <small>Keep in mind, this server will be added back if and when you visit it again.</small>
+                    <small>请记住，如果您再次访问此服务器，它将被重新添加</small>
                     <br/>
                     <div id="deleteRegistryResponse" style="display: block; width: 100%; text-align: center; padding-top: 20px;"></div>
                 </div>
@@ -1316,13 +1317,13 @@
                     <h4 class="modal-title" id="gotoServerModalLabel"><span id="gotoServerName"></span></h4>
                 </div>
                 <div class="modal-body">
-                    Checking known URLs for this server...
+                    正在检查此服务器的已知URL。。。
                     <div  style="padding-top: 20px;">
                         <table id="gotoServerList">
                         </table>
                     </div>
                     <p style="padding-top: 10px;"><small>
-                        Checks may fail if you are viewing an HTTPS page and the server to be checked is HTTP only.
+                        如果您正在查看HTTPS页面，并且要检查的服务器仅为HTTP，则检查可能会失败
                     </small></p>
                     <div id="gotoServerResponse" style="display: block; width: 100%; text-align: center; padding-top: 20px;"></div>
                 </div>
