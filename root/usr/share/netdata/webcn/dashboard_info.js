@@ -81,7 +81,7 @@ netdataDashboard.menu = {
     'ipv6': {
         title: 'IPv6网路',
         icon: '<i class="fas fa-cloud"></i>',
-        info: 'IPv6效能指标。 <a href="https://en.wikipedia.org/wiki/IPv6" target="_blank">Internet Protocol version 6 (IPv6)</a> is the most recent version of the Internet Protocol (IP), the communications protocol that provides an identification and location system for computers on networks and routes traffic across the Internet. IPv6 was developed by the Internet Engineering Task Force (IETF) to deal with the long-anticipated problem of IPv4 address exhaustion. IPv6 is intended to replace IPv4.'
+        info: 'IPv6效能指标。 <a href="https://en.wikipedia.org/wiki/IPv6" target="_blank">Internet Protocol version 6 (IPv6)</a> 是 Internet 协议 (IP) 的最新版本，该通信协议为网络上的计算机提供识别和定位系统并通过 Internet 路由流量。 IPv6 是由 Internet 工程任务组 (IETF) 开发的，用于解决期待已久的 IPv4 地址耗尽问题。 IPv6 旨在取代 IPv4.'
     },
 
     'sctp': {
@@ -985,7 +985,7 @@ netdataDashboard.context = {
 
 
     'mem.pgfaults': {
-        info: 'A <a href="https://en.wikipedia.org/wiki/Page_fault" target="_blank">page fault</a> is a type of interrupt, called trap, raised by computer hardware when a running program accesses a memory page that is mapped into the virtual address space, but not actually loaded into main memory. If the page is loaded in memory at the time the fault is generated, but is not marked in the memory management unit as being loaded in memory, then it is called a <b>minor</b> or soft page fault. A <b>major</b> page fault is generated when the system needs to load the memory page from disk or swap memory.'
+        info: 'A <a href="https://en.wikipedia.org/wiki/Page_fault" target="_blank">page fault</a> 是一种中断类型，称为陷阱，由计算机硬件在运行的程序访问映射到虚拟地址空间但实际上未加载到主内存的内存页面时引发。如果页面在生成故障时加载到内存中，但未在内存管理单元中标记为加载到内存中，那么它被称为 <b>minor</b> 或软页面错误。 A <b>major</b> page fault is generated when the system needs to load the memory page from disk or swap memory.'
     },
 
     'mem.committed': {
@@ -1400,7 +1400,7 @@ netdataDashboard.context = {
     
     'disk.backlog': {
         colors: '#0099CC',
-        info: 'Backlog is an indication of the duration of pending disk operations. On every I/O event the system is multiplying the time spent doing I/O since the last update of this field with the number of pending operations. While not accurate, this metric can provide an indication of the expected completion time of the operations in progress.'
+        info: '积压是待处理的磁盘操作持续时间的一个指示。在每一个I/O事件中，系统都会将该字段最后一次更新后进行I/O的时间与待处理操作的数量相乘。虽然不准确，但这个指标可以提供正在进行的操作的预期完成时间的指示。'
     },
 
     'disk.io': {
