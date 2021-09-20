@@ -2801,7 +2801,7 @@ NETDATA.dygraphChartCreate = function (state, data) {
                     }
                 }
 
-                // if it was double tap within double click time, reset the charts
+                // if it was 双击 within double click time, reset the charts
                 let now = Date.now();
                 if (typeof state.dygraph_last_touch_end !== 'undefined') {
                     if (state.dygraph_last_touch_move === 0) {
@@ -6963,7 +6963,7 @@ let chartState = function (element) {
 
         let now = Date.now();
         if (now - this.event_resize.last <= NETDATA.options.current.double_click_speed && this.element_legend_childs.perfect_scroller !== null) {
-            // double click / double tap event
+            // double click / 双击 event
 
             // console.dir(this.element_legend_childs.content);
             // console.dir(this.element_legend_childs.perfect_scroller);
@@ -8097,7 +8097,7 @@ let chartState = function (element) {
                             hide: NETDATA.options.current.show_help_delay_hide_ms
                         },
                         title: 'Chart Resize',
-                        content: 'Drag this point with your mouse or your finger (on touch devices), to resize the chart vertically. You can also <b>double click it</b> or <b>double tap it</b> to reset between 2 states: the default and the one that fits all the values.<br/><small>Help can be disabled from the settings.</small>'
+                        content: 'Drag this point with your mouse or your finger (on touch devices), to resize the chart vertically. You can also <b>double click it</b> or <b>双击 it</b> to reset between 2 states: the default and the one that fits all the values.<br/><small>Help can be disabled from the settings.</small>'
                     });
                 }
 
