@@ -30,6 +30,12 @@ LuCI  --->
 
 make package/luci-app-netdata/compile V=s
 
+
+## 界面
+![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/netspeedtest1.jpg)
+
+![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/netspeedtest2.jpg)
+
 ![screenshots](https://raw.githubusercontent.com/sirpdboy/openwrt/master/doc/说明2.jpg)
 
 # My other project
