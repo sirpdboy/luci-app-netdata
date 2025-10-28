@@ -1,4 +1,4 @@
-// 版权   Copyright (C) 2021-2025 sirpdboy herboy2008@gmail.com https://github.com/sirpdboy/luci-app-netdata
+// Copyright (C) 2021-2025 sirpdboy herboy2008@gmail.com https://github.com/sirpdboy/luci-app-netdata
 'use strict';
 'require view';
 'require fs';
